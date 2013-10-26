@@ -2,17 +2,21 @@
 
 A Maven archetype for a JavaFX 2 application.
 
-It uses the zenjava maven plugin for JavaFX. Zenjava has archetypes, but they did not
+It uses the [ZenJava JavaFX Maven plugin](http://zenjava.com/javafx/maven/)
+. Zenjava has archetypes too, but they did not
 fit my needs.
+
 
 
 This project is explained in my [Blog post](http://rockhoppertech.com/blog/fxarchetype).
 
 ## Usage
 
-mvn install
+    mvn install
 
-in order to add to your local catalog
+in order to add to your local catalog. You migh want to update the catalog too.
+
+    mvn archetype:update-local-catalog
 
 Then select the archetype when you create a new maven project.
 
