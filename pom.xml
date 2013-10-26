@@ -5,6 +5,8 @@
 	<artifactId>fxarchetype</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>maven-archetype</packaging>
+	<description>A JavaFX 2 archetype that uses the ZenJava maven plugin.</description>
+	<inceptionYear>2012</inceptionYear>
 
 	<prerequisites>
 		<maven>3.0</maven>
@@ -62,4 +64,6 @@
 		</pluginManagement>
 	</build>
 
+	
+	
 </project>

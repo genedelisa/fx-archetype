@@ -10,6 +10,10 @@
     <packaging>jar</packaging>
     <version>${version}</version>
     
+	<prerequisites>
+		<maven>3.0.4</maven>
+	</prerequisites>
+    
     <organization>
         <!-- Used as the 'Vendor' for JNLP generation -->
         <name>${vendor}</name>
