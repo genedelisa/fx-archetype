@@ -7,7 +7,9 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.stage.Screen;
 import javafx.stage.Stage;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -30,11 +32,18 @@ public class MainApp extends Application {
                 fxmlFile));
 
         log.debug("Showing JFX scene");
-        Scene scene = new Scene(rootNode, 400, 200);
+        Scene scene = new Scene(rootNode);
         scene.getStylesheets().add("/styles/styles.css");
 
         stage.setTitle("Hello JavaFX");
         stage.setScene(scene);
+        
+        // make it full screen
+        stage.setX(0);
+        stage.setY(0);
+        stage.setWidth(Screen.getPrimary().getVisualBounds().getWidth());
+        stage.setHeight(Screen.getPrimary().getVisualBounds().getHeight());
+        
         stage.show();
     }
 }
