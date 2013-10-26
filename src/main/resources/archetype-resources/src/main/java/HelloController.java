@@ -20,11 +20,17 @@ public class HelloController {
 
     @FXML
     private URL location;
+    
+    private Stage stage;
 
     @FXML
     void initialize() {
         logger.debug("initializing");
 
+    }
+    
+    public setStage(Stage stage) {
+        this.stage = stage;
     }
 
 }

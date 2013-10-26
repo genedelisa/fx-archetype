@@ -13,6 +13,8 @@ import javafx.stage.Stage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.rockhoppertech.music.fx.FXMLController;
+
 public class MainApp extends Application {
 
     private static final Logger log = LoggerFactory.getLogger(MainApp.class);
@@ -30,6 +32,8 @@ public class MainApp extends Application {
         FXMLLoader loader = new FXMLLoader();
         Parent rootNode = (Parent) loader.load(getClass().getResourceAsStream(
                 fxmlFile));
+        HelloController controller = (HelloController) loader.getController();
+        controller.setStage(stage);
 
         log.debug("Showing JFX scene");
         Scene scene = new Scene(rootNode);
