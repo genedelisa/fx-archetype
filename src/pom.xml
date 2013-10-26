@@ -8,6 +8,7 @@
   <packaging>maven-archetype</packaging>
 
   <name>gene-fx-archetype</name>
+  <description>A JavaFX 2 application. Uses logback for logging.</description>
 
   <build>
     <extensions>
