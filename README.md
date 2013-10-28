@@ -14,7 +14,7 @@ This project is explained in my [Blog post](http://rockhoppertech.com/blog/fxarc
 
     mvn install
 
-in order to add to your local catalog. You migh want to update the catalog too.
+in order to add to your local catalog. You might want to update the catalog too.
 
     mvn archetype:update-local-catalog
 
