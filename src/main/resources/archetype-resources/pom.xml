@@ -25,6 +25,10 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.src.version>1.7</java.src.version>
 		<java.target.version>1.7</java.target.version>
+		
+		<!-- so you can specify which main to run from the cmd line: -DappClassname=whatever -->
+		<!-- In eclipse, add a parameter in the run configuration -->
+		<appClassname>${package}.MainApp</appClassname>		
 
 		<!-- logging -->
 		<org.slf4j.version>1.7.5</org.slf4j.version>
@@ -55,7 +59,7 @@
 				<version>2.0</version>
 				<configuration>
 
-					<mainClass>${package}.MainApp</mainClass>
+					<mainClass>${appClassname}</mainClass>
 
 					<!-- only required if signing the jar file -->
 					<keyStoreAlias>example-user</keyStoreAlias>
