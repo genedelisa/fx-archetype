@@ -7,9 +7,12 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import javafx.fxml.FXML;
+import javafx.stage.Stage;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+
 
 public class HelloController {
     private static final Logger logger = LoggerFactory
@@ -29,7 +32,7 @@ public class HelloController {
 
     }
     
-    public setStage(Stage stage) {
+    public void setStage(Stage stage) {
         this.stage = stage;
     }
 
