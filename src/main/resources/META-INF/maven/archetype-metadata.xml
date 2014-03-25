@@ -18,7 +18,7 @@
         </requiredProperty> -->
         
          <requiredProperty key="vendor">
-            <defaultValue>Rockhopper Tecnologies</defaultValue>
+            <defaultValue>Rockhopper Technologies</defaultValue>
         </requiredProperty>
         
     </requiredProperties>
